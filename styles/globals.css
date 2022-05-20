@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing-page {
+  background: rgb(21, 120, 109);
+  background: radial-gradient(
+    circle,
+    rgba(21, 120, 109, 1) 0%,
+    rgba(24, 24, 24, 1) 96%,
+    rgba(229, 229, 229, 1) 100%
+  );
+}
