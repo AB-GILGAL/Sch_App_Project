@@ -26,12 +26,12 @@ const Card = ({ school, session }) => {
       <div className="relative h-52">
         <Image src={school.imageUrl} layout="fill" />
       </div>
-      <div className="px-3 py-5 space-y-2">
+      <div className="px-3 py-5 space-y-2 bg-teal-900 text-white">
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl text-gray-500 font-semibold italic">
+          <h3 className="text-2xl text-white font-semibold italic">
             {school.name}
           </h3>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 ">
             {session && school.reviews.includes(session.user.id) ? (
               <StarIconSolid
                 onClick={() => review()}
@@ -47,17 +47,17 @@ const Card = ({ school, session }) => {
           </div>
         </div>
         <div>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-white">
             <span className="w-20 inline-block font-bold">Location:</span> Cape
             Coast
           </p>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-white">
             <span className="w-20 inline-block font-bold">Contact:</span> 030
             123 4567
           </p>
         </div>
         <div>
-          <button className="w-full bg-slate-400 text-white rounded-full py-1.5 font-semibold">
+          <button className="w-full bg-white text-teal-900 rounded-full py-1.5 font-semibold">
             Read More...
           </button>
         </div>
