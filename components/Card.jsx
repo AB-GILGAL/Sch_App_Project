@@ -2,9 +2,11 @@ import { StarIcon } from "@heroicons/react/outline";
 import { StarIcon as StarIconSolid } from "@heroicons/react/solid";
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import { useSchoolContext } from "../context/schoolContext";
+import SchoolDetail from "../pages/[schoolId]";
 
 const Card = ({ school, session }) => {
   const { addSchool } = useSchoolContext();
@@ -48,18 +50,20 @@ const Card = ({ school, session }) => {
         </div>
         <div>
           <p className="text-lg text-white">
-            <span className="w-20 inline-block font-bold">Location:</span> Cape
-            Coast
+            <span className="w-20 inline-block font-bold">Location:</span>{" "}
+            {school.location}
           </p>
           <p className="text-lg text-white">
-            <span className="w-20 inline-block font-bold">Contact:</span> 030
-            123 4567
+            <span className="w-20 inline-block font-bold">Contact:</span>{" "}
+            {school.contact}
           </p>
         </div>
         <div>
-          <button className="w-full bg-white text-teal-900 rounded-full py-1.5 font-semibold">
-            Read More...
-          </button>
+          <Link href={`schoolId`}>
+            <a className="w-full bg-white text-teal-900 rounded-full py-1.5 px-10 font-semibold">
+              Read More...
+            </a>
+          </Link>
         </div>
       </div>
     </div>

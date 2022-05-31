@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.landing-page {
-  background: rgb(21, 120, 109);
+.landing-page,
+.signUp {
+  background: rgb(8, 36, 33);
   background: radial-gradient(
     circle,
-    rgba(21, 120, 109, 1) 0%,
+    rgba(8, 36, 33) 0%,
     rgba(24, 24, 24, 1) 96%,
     rgba(229, 229, 229, 1) 100%
   );

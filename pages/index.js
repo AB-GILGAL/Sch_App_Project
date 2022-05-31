@@ -26,20 +26,22 @@ function LandingPage() {
               <Link href="/login">LOGIN</Link>
             </li>
             <li>
-              <Link href="/sign up">SIGN UP</Link>
+              <Link href="/signUp">SIGN UP</Link>
             </li>
           </ul>
         </div>
         <div className="p-20">
-          <h1 className="py-10 text-teal-600 montserrat font-bold text-6xl ">
+          <h1 className="text-teal-600 montserrat font-bold text-6xl ">
             SIMPLE, INTEGRATED <br />
             SCHOOL SEARCH SOLUTION
           </h1>
-          <p className="text-white text-3xl">
+          <p className=" py-20 text-white text-3xl">
             Seamless search engine, right information <br /> and easy navigation
             to your choicest school across the country
           </p>
-          <button className=" py-20 text-white text-xl">GET STARTED</button>
+          <button className=" py-2 px-3 text-white text-xl bg-teal rounded-lg border-2 border-solid border-white">
+            GET STARTED
+          </button>
         </div>
         <div></div>
       </div>

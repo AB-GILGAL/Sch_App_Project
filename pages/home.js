@@ -34,11 +34,14 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto py-10">
-      <div className="flex flex-wrap gap-10">
-        {filteredSchools.map((school, index) => (
-          <Card key={index} school={school} session={session} />
-        ))}
+    <div>
+      <Navbar />
+      <div className="max-w-7xl mx-auto py-10">
+        <div className="flex flex-wrap gap-10">
+          {filteredSchools.map((school, index) => (
+            <Card key={index} school={school} session={session} />
+          ))}
+        </div>
       </div>
     </div>
   );
