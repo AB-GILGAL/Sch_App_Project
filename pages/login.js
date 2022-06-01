@@ -1,6 +1,7 @@
 import { getCsrfToken, signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Login = ({ csrfToken }) => {
   const [state, setState] = useState({
@@ -78,9 +79,9 @@ const Login = ({ csrfToken }) => {
             </div>
             <p className="text-white">
               Don't have an account?{" "}
-              <a className="text-red-600 font-bold" href="/signUp">
+              <Link className="text-red-600 font-bold" href="/signUp">
                 Sign Up
-              </a>
+              </Link>
             </p>
             <button className="text-center text-white text-lg font-bold bg-green-400 rounded-full px-2">
               Login
